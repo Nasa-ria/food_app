@@ -1,0 +1,46 @@
+<div class="abttt">
+
+ 
+
+<div class="order-data">
+    <h1 class="order_head">ORDERS   </h1>
+    <div class="abt_d">
+          <% if (typeof orders != 'undefined'){  %> 
+          <% orders.forEach((order)=>{ %>
+            <div id="card">
+                <p class="abt_cm">Order Summary</p>
+        <p class="abt_cm"> Customer Name : <%- order.customer %></p>
+        <p class="abt_cm">Menu Ordered : <%- order.menu.name %> </p>
+        <p class="abt_cm">Total Cost : <%- order.cost %> Ghana Cedis</p>
+            <p class="abt_cm"> Date of Order : <%- order.order_date %></p>
+            <div class="dropdown">
+                <button class="dropbtn">
+                  <i class="bi bi-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/orders/edit/<%=order._id %>" >Edit an Order</a>
+                    <a href="/orders/delete/<%=order._id %>">delete order</a>
+                 </div>
+              </div>
+
+        </div>
+        
+      
+       <% })%>
+           <%}%>
+        
+        </div>
+    </div>
+
+<h1 class="order_head">SOCIAL CONTENT    </h1>
+
+<div class="order_container">
+   
+    <img  class ="order_img" src="../../images/istockphoto-12.jpg" alt="food image">
+    <img  class ="order_img" src="../../images/order.jpg" alt="food image">  
+     <img  class ="order_img" src="../../images/istock.jpg" alt="food image">
+
+   
+</div>
+</div>
+<script src="/js/index.js"></script>

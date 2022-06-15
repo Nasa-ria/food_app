@@ -1,0 +1,31 @@
+<div class="FORM">
+<div class="order_form">
+<form method="Post">
+<!-- ignore  this -->
+    <label  class="txxt_1" > first name :
+        <input type="text" id="customer" name="customer" value="<%= order.customer %>" placeholder="enter your name">
+    </label>
+    
+        <label  class="txxt_1" > customer Name :
+            <input type="text" id="customer" name="customer" value="<%= order.customer %>" placeholder="enter your name">
+        </label>
+       
+ <br>
+    <label class="txxt"> Menu :
+    <select class="order_select" name="menu" required>
+        <option value = "<%= order.menu._id %>"><%= order.menu.name %></option> 
+       <% if (typeof menus != 'undefined'){ %>
+     <% menus.forEach((menu) => { %>
+        <option value ="<%= menu._id %>"><%= menu.name %></option>    
+    <% }) %>
+<%} %>
+
+</select>
+</label>
+<br>
+<button  class= "o_btn" type="submit" value="Submit">submit</button>  
+
+</form>
+</div>
+</div>
+<script src="/js/index.js"></script>

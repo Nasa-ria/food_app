@@ -1,0 +1,39 @@
+<div class="menu">
+    <div class="menu-header">
+        <h1 class="menu_head">OUR MENU </h1>
+    
+    <div class="list_menu">
+        <div class="menu_data">
+                <% if (typeof menus != 'undefined'){  %> 
+                    <%	menus.forEach((menu) =>{ %>
+                    <div id="card_menu">
+                <p class="menu_item"> Menu : <%-menu.name %></p>
+                <p class="menu_item">Price : <%- menu.price %> Ghana cedis</p>
+                <p class="menu_item">Status : <%-menu.status %></p>
+                <p class="menu_item">supplement : <%-menu.supplementary %></p>
+         
+                <div class="dropdown">
+                    <button class="dropbtn">
+                      <i class="bi bi-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/menus/add"  class="menu_link" >Add Menu</a>
+                <a href="/menus/edit/<%=menu._id %>"   class="menu_link" style="color: green;" >Edit Menu</a>
+                <a href="/menus/delete/<%=menu._id %>"  class="menu_link" style="color: red;">delete Menu</a> 
+                <a href="/orders/add/<%=menu._id %>"  class="menu_link" style="color: blue;">make an order</a>
+                  </div>
+
+            </div>
+                    </div>
+           
+                <% }) %>
+                <%}%>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+<script src="/js/index.js"></script>

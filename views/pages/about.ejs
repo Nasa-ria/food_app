@@ -1,0 +1,136 @@
+<div class="abttt">
+    <div class="abt-header">
+        <h1 class="headd">About Us</h1>
+        <p class="abt_story">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with
+            the release of Letraset sheets containing Lorem Ipsum passages, and
+            more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsu
+        </p>
+    </div>
+    <div class="form_abt">
+        <form action="" method="post" class="search">
+            <input
+                class="input_abt"
+                type="text"
+                id="search"
+                name="search"
+                placeholder="search ......."
+            />
+
+            <button class="btn_abt" type="Submit">
+                <i
+                    class="bi bi-search"
+                    style="font-size: 16px color chocolate"
+                    ;
+                ></i>
+            </button>
+        </form>
+    </div>
+    <p class="ppp_abt">COMMENTS ON DISPLAY</p>
+    <div class="list_abt">
+        <div class="abt_d">
+                <% if (typeof comments != 'undefined'){  %> 
+            <%	comments.forEach((comment) =>{ %>
+                    <div id="card">
+                <p class="p_abt"> COMMENT</p>
+                <p class="abt_cm">Username : <%-comment.name %></p>
+                <p class="abt_cm">Email Address : <%-comment.email %></p>
+                <p class="abt_cm">Comment_Section : <%-comment.comment%></p>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                      <i class="bi bi-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/comments/edit/<%=comment._id %>">Edit Comment</a>
+                  </div>
+
+            </div>
+                    </div>
+                <% }) %>
+                <%}%>
+        
+        </div>
+    </div>
+</div>
+<div class="whole_div">
+    <div class="foods-category">
+        <h5>Meet The Team</h5>
+        <section class="second-tables features-two">
+            <div class="foods1 profile1">
+                <img src="./images/photo-013d.jpg" />
+                <div class="food-response">Asante</div>
+                <div class="foods_detail">C. E. O</div>
+                <ul class="socils">
+                    <li class="li">
+                        <i class="bi bi-twitter" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-facebook" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-linkedin" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-instagram" style="font-size: 16px"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="foods1">
+                <img src="/images/photo-2604.jpg" />
+                <div class="food-response">Kofi</div>
+                <div class="foods_detail">Chef</div>
+                <ul class="socils">
+                    <li class="li">
+                        <i class="bi bi-twitter" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-facebook" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-linkedin" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-instagram" style="font-size: 16px"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="foods1">
+                <img src="/images/photo-4330.jpg" />
+                <div class="food-response">Bloh</div>
+                <div class="foods_detail">Manager</div>
+                <ul class="socils">
+                    <li class="li">
+                        <i class="bi bi-twitter" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-facebook" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-linkedin" style="font-size: 16px"></i>
+                    </li>
+                    <li class="li">
+                        <i class="bi bi-instagram" style="font-size: 16px"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+></script>
+<script src="/js/index.js"></script>
+<script src="/js/about.js"></script>
+</body>
+</html>

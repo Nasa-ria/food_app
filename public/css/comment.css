@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	overflow-x: hidden !important;
+}
+.FORM{
+	background-image: url("/images/bg36.jpg");
+	background-size: cover;
+	height: 100vh;
+    /* color: rgb(3, 3, 48); */
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+margin-top: 10em;
+gap: 2em;
+
+
+}
+.text,.text_1{
+    color: blanchedalmond;
+    font-family: roboto;
+    font-size: x-large;
+}
+
+input{
+    width: 38em;
+    height: 3em;
+    border-radius: 1em;
+    border: none;
+    padding: 6px;
+    font-size: 15px;
+    font-family: roboto;
+  
+}
+::placeholder{
+    color: blue;
+  padding: 1em;
+  font-family: roboto;
+  font-size: medium;
+}
+.text_1{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-right: 2em;
+}
+textarea{
+    font-family: roboto;
+    font-size: medium;
+    width: 36em;
+    height: 6em;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    /* height: 20em; */
+    color: blue;
+    border: none;
+  
+}
+.com_bt{
+    width: 12em;
+    height: 4em;
+    color:white;
+    background-color: orange;
+    border: none;
+    border-radius: 1em;
+}
+/* ****delete menu page */
+.delete{
+    color:burlywood;
+    font-size:3em;
+}
+.btn_delete{
+    width: 5em;
+    background-color: orange;
+    color: white;
+    font-size: 1.6em;
+    border: none;
+    margin-top: 2.4em;
+    border-radius: 10px;
+    margin-left: 2em;
+   
+}
+.btn_delete a{
+    color: white;
+}
+.menu_link{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+/* width: 10em; */
+    /* margin-right: 7em; */
+    font-size: 12px;
+    /* width: 3em; */
+}

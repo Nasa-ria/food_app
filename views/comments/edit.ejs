@@ -1,0 +1,20 @@
+<div class="FORM">
+            
+    <form class="form" id="form-input" action='' method="post">
+       <label class="text">User Name :         
+        <input  type="text"  id ="name" name="name"  value="<%= comment.name %>" placeholder="type  in your name...." required>
+    </label>
+        <label class="text">Email Address :
+        <input type="email"  id="email" name="email" value="<%= comment.email %>" placeholder="type  in  your email address...." required>
+    </label>
+        <label class="text_1">Comment Section :
+        <textarea  name="comment" id="comment" placeholder="enter your comment " required> <%= comment.comment %></textarea>
+    </label>
+        <button  class="com_bt" type="submit" value="Submit">send</button>
+    </form>
+
+</form>
+
+</div>
+
+<script src="/js/index.js"></script> 

@@ -1,0 +1,25 @@
+
+            
+  <div class="FORM">
+    <form action=" "  class="order" method="post">
+  
+    </label>
+      <input type="hidden" id="cost" name="cost"   value="<%= menu.price %>">
+      <input type="hidden" id="staus" name="status"   value="<%= menu.status%>">
+   
+    <button   class="order_btn" type="submit" value="Submit">submit</button>   
+    </form>
+    <br>
+    <hr>
+<div class="detail">
+<h4 class="order_h">order Details</h4>
+<p class="order-d">menu : <%= menu.name %></p>
+<p class="order-d">price : <%= menu.price %> Ghana cedis</p>
+
+<p class="order-d">supplement : <%= menu.supplementary %></p>
+
+</div>
+
+</div>
+
+<script src="/js/index.js"></script>

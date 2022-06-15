@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- header -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%- title %></title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet"  type="text/css" href="/css/home.css" />
+		<link rel="stylesheet"  type="text/css" href="/css/comment.css" />
+		<link rel="stylesheet"  type="text/css" href="/css/about.css" />
+		<link rel="stylesheet"  type="text/css" href="/page.css" />
+        <link rel="stylesheet"  type="text/css" href="/css/menu.css" />
+		<link rel="stylesheet"  type="text/css" href="/css/contact_us.css" />
+        <link rel="stylesheet"  type="text/css" href="/css/order.css" />
+        <link rel="stylesheet"  type="text/css" href="/css/feedback.css" />
+	
+	
+  
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="nav_bar">
+        <header>
+            <div class="nav_list">
+                <img src="/images/restaurant_logo.png" />
+                <ul class="tabs">
+                    <li class="nav-item"><a class="link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="link" href="#">story</a></li>
+                    <li class="nav-item"><a class="link" href="/menus">Menu</a></li>
+                    <li class="nav-item"><a class="link" href="/contact_us">Contact us</a></li>
+                    <li class="nav-item"><a class="link" href="#">Testimonails</a></li>
+                    <li class="nav-item"><a class="link" href="/orders">Orders</a></li>
+                    <li class="nav-item"><a class="link" href="/comment">send a comment</a></li>
+                    <li class="nav-item"><a class="link" href="/about">About</a></li>
+                </ul>
+            </div>
+         
+        </header>
+    </nav>
+<!-- ejs ccall which renders ur view -->
+       <%-body-%>
+
+
+
+
+
+
+<!-- footer -->
+    <footer class="footer">
+		
+        <div class="foot">
+            <p class="footer_text">
+            <img class="footer_img" src="/images/footer-logo.png" /><br>
+        
+        © 2015 Select<br>
+            Designed by Multifour.com
+        </p>
+          <ul class="footer_icons">
+              <li >
+                <i class="bi bi-twitter" style="font-size:20px; color :gainsboro; gap:80px;"></i>
+                <i class="bi bi-facebook" style="font-size:20px; color :gainsboro;"></i>
+                <i class="material-icons" style="font-size:20px; color:gainsboro;">sports_basketball</i>
+                <i class="bi bi-linkedin" style="font-size:28px; color :gainsboro;"></i>
+                <i class="bi bi-instagram" style="font-size:20px; color :gainsboro;"></i>
+                <i class="bi bi-pinterest" style="font-size:20px; color :gainsboro;"></i>
+                <i class="material-icons" style="font-size:20px; color:gainsboro;">hdr_weak</i> 
+              </li>
+          </ul>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
